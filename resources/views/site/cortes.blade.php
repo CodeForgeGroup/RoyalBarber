@@ -5,6 +5,28 @@
 @section('conteudo')
 
 
+
+<style>
+
+    .service .nav .nav-link {
+        background: var(--light);
+        transition: .5s;
+    }
+
+    .service .nav .nav-link.active {
+        background: var(--primary);
+    }
+
+    .service .nav .nav-link.active h4 {
+        color: #FFFFFF !important;
+    }
+
+
+    </style>
+
+
+
+
     <section class="site-hero overlay" data-stellar-background-ratio="0.5" style="background-image: url(images/big_image_1.jpg);">
       <div class="container">
         <div class="row align-items-center site-hero-inner justify-content-center">
@@ -62,114 +84,136 @@
     <!-- END section -->
 
 
-    <section class="site-section pb-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 video-wrap mb-5">
-            <img src="images/cortes/americano.jpg" alt="Image placeholder" class="img-fluid">
-          </div>
-          <div class="col-md-6 pl-md-5">
-            <h3>Corte americano</h3>
-            <p class="lead">Um clássico atemporal</p>
-            <p>O corte de cabelo "americano" é um estilo clássico e atemporal que se destaca pela sua simplicidade e versatilidade. Caracterizado por cabelo mais curto nas laterais e na parte de trás da cabeça, com um topo mais longo e texturizado, o corte americano oferece um visual elegante e polido. </p>
-            <p> Este estilo é popular entre homens de todas as idades e é frequentemente adaptado para se adequar a diferentes tipos de cabelo e preferências de estilo. Com sua aparência limpa e acabamento bem cuidado, o corte de cabelo americano é uma escolha confiável para aqueles que procuram um visual clássico e sem complicações.</p>
-          </div>
+    <!-- Service Start -->
+<div class="container-xxl service py-5">
+    <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="text-primary text-uppercase">// Cortes //</h6>
+            <h1 class="mb-5">Explore Nossos Serviços</h1>
         </div>
-      </div>
-    </section>
-    <!-- END section -->
-
-    <section class="pt-5 pb-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 video-wrap mb-5">
-            <img src="images/cortes/lowFade.jpg" alt="Image placeholder" class="img-fluid">
-          </div>
-          <div class="col-md-6 pl-md-5">
-            <h3>Corte low fade</h3>
-            <p class="lead">Versatilidade e estilo</p>
-            <p>O "low fade" é um estilo de corte de cabelo masculino que tem ganhado popularidade nos últimos anos. Neste corte, as laterais e a parte de trás da cabeça são raspadas ou cortadas em gradiente, começando com o cabelo mais curto perto das orelhas e se desvanecendo gradualmente para uma linha de cabelo mais completa em direção à parte de trás da cabeça.</p>
-            <p>O "low fade" é conhecido por sua versatilidade e por complementar uma ampla variedade de estilos de cabelo, desde cortes curtos até penteados mais longos no topo da cabeça. Sua transição suave entre o cabelo mais curto e o comprimento mais longo torna-o uma escolha popular entre aqueles que desejam um visual limpo e elegante, sem comprometer a textura ou o estilo.</p>
-          </div>
+        <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="col-lg-4">
+                <div class="nav w-100 nav-pills me-4">
+                    <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4 active" data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button" style="cursor: pointer">
+                        <h4 class="m-0">Corte Clássico</h4>
+                    </button>
+                    <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button" style="cursor: pointer">
+                        <h4 class="m-0">Corte Moderno</h4>
+                    </button>
+                    <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-3" type="button" style="cursor: pointer">
+                        <h4 class="m-0">Corte Degradê</h4>
+                    </button>
+                    <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-0" data-bs-toggle="pill" data-bs-target="#tab-pane-4" type="button" style="cursor: pointer">
+                        <h4 class="m-0">Corte Militar</h4>
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="tab-content w-100">
+                    <div class="tab-pane fade show active" id="tab-pane-1">
+                        <div class="row g-4">
+                            <div class="col-md-6" style="min-height: 350px;">
+                                <div class="position-relative h-100">
+                                    <img class="position-absolute img-fluid w-100 h-100" src="images/cortes/social.jpg" style="object-fit: cover;" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h3 class="mb-3">Corte Clássico</h3>
+                                <p class="mb-4">O corte clássico nunca sai de moda. Simples, elegante e sempre na tendência. Perfeito para homens que buscam um visual tradicional com um toque moderno.</p>
+                                <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Elegante</p>
+                                <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Tradicional</p>
+                                <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Visual Limpo</p>
+                                <a href="" class="btn btn-primary py-3 px-5 mt-3" style="border-radius: 15px">Agende<i class="fa fa-arrow-right ms-3"  style="margin-left: 10px"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tab-pane-2">
+                        <div class="row g-4">
+                            <div class="col-md-6" style="min-height: 350px;">
+                                <div class="position-relative h-100">
+                                    <img class="position-absolute img-fluid w-100 h-100" src="images/cortes/mullet.jpg" style="object-fit: cover;" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h3 class="mb-3">Corte Moderno</h3>
+                                <p class="mb-4">Para aqueles que gostam de inovar, o corte moderno oferece diversas possibilidades de estilo. Atualize seu visual com as tendências mais recentes e técnicas avançadas.</p>
+                                <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Estilo Atual</p>
+                                <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Visual Inovador</p>
+                                <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Técnicas Avançadas</p>
+                                <a href="" class="btn btn-primary py-3 px-5 mt-3" style="border-radius: 15px">Agende<i class="fa fa-arrow-right ms-3" style="margin-left: 10px"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tab-pane-3">
+                        <div class="row g-4">
+                            <div class="col-md-6" style="min-height: 350px;">
+                                <div class="position-relative h-100">
+                                    <img class="position-absolute img-fluid w-100 h-100" src="images/cortes/americano.jpg" style="object-fit: cover;" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h3 class="mb-3">Corte Degradê</h3>
+                                <p class="mb-4">O corte degradê, também conhecido como fade, é perfeito para quem busca um visual sofisticado e versátil. Ideal para diferentes comprimentos de cabelo e estilos pessoais.</p>
+                                <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Sofisticado</p>
+                                <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Versátil</p>
+                                <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Estilo Personalizado</p>
+                                <a href="" class="btn btn-primary py-3 px-5 mt-3" style="border-radius: 15px">Agende<i class="fa fa-arrow-right ms-3" style="margin-left: 10px"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tab-pane-4">
+                        <div class="row g-4">
+                            <div class="col-md-6" style="min-height: 350px;">
+                                <div class="position-relative h-100">
+                                    <img class="position-absolute img-fluid w-100 h-100" src="images/cortes/militar.jpg" style="object-fit: cover;" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h3 class="mb-3">Corte Militar</h3>
+                                <p class="mb-4">O corte militar é prático, limpo e mantém um visual sempre organizado. Perfeito para homens que preferem um estilo mais simples e fácil de manter.</p>
+                                <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Prático</p>
+                                <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Limpo</p>
+                                <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Fácil de Manter</p>
+                                <a href="" class="btn btn-primary py-3 px-5 mt-3" style="border-radius: 15px">Agende<i class="fa fa-arrow-right ms-3" style="margin-left: 10px"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </section>
-    <!-- END section -->
-
-    <section class="pt-5 pb-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 video-wrap mb-5">
-            <img src="images/cortes/moicano.jpg" alt="Image placeholder" class="img-fluid">
-          </div>
-          <div class="col-md-6 pl-md-5">
-            <h3>Corte moicano</h3>
-            <p class="lead">Estilo e ousadia</p>
-            <p>O corte de cabelo "moicano" é um estilo ousado e distintivo que se destaca pela sua aparência única e marcante. Caracterizado por cabelo raspado ou muito curto nas laterais da cabeça e um topo mais longo, que pode ser estilizado para ficar em pé, o corte moicano transmite uma sensação de rebeldia e individualidade.</p>
-            <p>Este estilo ganhou popularidade entre aqueles que desejam uma aparência mais ousada e expressiva, muitas vezes associada a subculturas como punk e rock. Com sua estética audaciosa e atitude de destaque, o corte moicano é uma escolha ideal para aqueles que desejam fazer uma declaração de estilo forte e confiante.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- END section -->
+    </div>
+</div>
+<!-- Service End -->
 
 
 
-    <section class="site-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5">
-          <div class="col-md-7 text-center">
-            <h2>Mais estilos</h2>
-            <p>Explore nossa galeria de cortes para descobrir uma variedade de estilos e encontrar aquele que melhor combina com você!</p>
-          </div>
-        </div>
-        <div class="row top-destination">
-          <div class="col-lg-2 col-md-4 col-sm-6 col-12">
-            <a href="#" class="place">
-              <img src="images/cortes/mullet.jpg" alt="Image placeholder" >
-              <h2>Corte mullet</h2>
-              <p>Marque seu horário</p>
-            </a>
-          </div>
-          <div class="col-lg-2 col-md-4 col-sm-6 col-12">
-            <a href="#" class="place">
-              <img src="images/cortes/highFade.jpg" alt="Image placeholder">
-              <h2>Corte high fade</h2>
-              <p>Marque seu horário</p>
-            </a>
-          </div>
-          <div class="col-lg-2 col-md-4 col-sm-6 col-12">
-            <a href="#" class="place">
-              <img src="images/cortes/militar.jpg" alt="Image placeholder">
-              <h2>Corte militar</h2>
-              <p>Marque seu horário</p>
-            </a>
-          </div>
-          <div class="col-lg-2 col-md-4 col-sm-6 col-12">
-            <a href="#" class="place">
-              <img src="images/cortes/social.jpg" alt="Image placeholder">
-              <h2>Corte social</h2>
-              <p>Marque seu horário</p>
-            </a>
-          </div>
-          <div class="col-lg-2 col-md-4 col-sm-6 col-12">
-            <a href="#" class="place">
-              <img src="images/cortes/doJaca.jpg" alt="Image placeholder">
-              <h2>Corte do jaca</h2>
-              <p>Marque seu horário</p>
-            </a>
-          </div>
-          <div class="col-lg-2 col-md-4 col-sm-6 col-12">
-            <a href="#" class="place">
-              <img src="images/cortes/careca.jpg" alt="Image placeholder">
-              <h2>Corte na zero</h2>
-              <p>Marque seu horário</p>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- END section -->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Adiciona um evento de clique para os botões das abas
+            $('.nav-link').click(function() {
+                // Remove a classe 'active' de todos os botões
+                $('.nav-link').removeClass('active');
+
+                // Adiciona a classe 'active' apenas ao botão clicado
+                $(this).addClass('active');
+
+                // Obtém o alvo da aba a ser mostrada
+                var target = $(this).attr('data-bs-target');
+
+                // Esconde todas as abas
+                $('.tab-pane').removeClass('show active');
+
+                // Mostra a aba correspondente ao botão clicado
+                $(target).addClass('show active');
+            });
+        });
+        </script>
+
+
 
 
 

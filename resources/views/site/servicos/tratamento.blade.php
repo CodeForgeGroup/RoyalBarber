@@ -5,6 +5,29 @@
 @section('conteudo')
 
 
+
+
+
+<style>
+
+    .service .nav .nav-link {
+        background: var(--light);
+        transition: .5s;
+    }
+
+    .service .nav .nav-link.active {
+        background: var(--primary);
+    }
+
+    .service .nav .nav-link.active h4 {
+        color: #FFFFFF !important;
+    }
+
+
+    </style>
+
+
+
     <section class="site-hero overlay" data-stellar-background-ratio="0.5"
         style="background: url(../images/banners/barbas.svg);max-width:1920px;">
         <div class="container">
@@ -63,57 +86,133 @@
     <!-- END section -->
 
 
-    <section class="site-section pb-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 video-wrap mb-5">
-                    <img src="../images/tratamentos/tratamentoFacial.png" alt="Image placeholder" class="img-fluid">
+    <!-- Service Start -->
+<div class="container-xxl service py-5">
+    <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="text-primary text-uppercase">// Tratamentos Masculinos //</h6>
+            <h1 class="mb-5">Explore Nossos Serviços</h1>
+        </div>
+        <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="col-lg-4">
+                <div class="nav w-100 nav-pills me-4">
+                    <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4 active" data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button" style="cursor: pointer">
+                        <h4 class="m-0">Corte de Cabelo</h4>
+                    </button>
+                    <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button" style="cursor: pointer">
+                        <h4 class="m-0">Aparar Barba</h4>
+                    </button>
+                    <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-3" type="button" style="cursor: pointer">
+                        <h4 class="m-0">Limpeza de Pele</h4>
+                    </button>
+                    <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-0" data-bs-toggle="pill" data-bs-target="#tab-pane-4" type="button" style="cursor: pointer">
+                        <h4 class="m-0">Massagem Relaxante</h4>
+                    </button>
                 </div>
-                <div class="col-md-6 pl-md-5">
-                    <h3>Tratamento Facial Masculino</h3>
-                    <p class="lead">Um tratamento revigorante para sua barba</p>
-                    <p>Começamos com a aplicação de uma toalha quente para abrir os poros e suavizar os pelos da barba,
-                        seguida por um corte e modelagem precisos para garantir uma aparência impecável. Finalizamos com um
-                        tratamento de óleo de barba para hidratar e condicionar, deixando sua barba com uma sensação suave e
-                        saudável.</p>
+            </div>
+            <div class="col-lg-8">
+                <div class="tab-content w-100">
+                    <div class="tab-pane fade show active" id="tab-pane-1">
+                        <div class="row g-4">
+                            <div class="col-md-6" style="min-height: 350px;">
+                                <div class="position-relative h-100">
+                                    <img class="position-absolute img-fluid w-100 h-100" src="../images/cortes/americano.jpg" style="object-fit: cover;" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h3 class="mb-3">Corte de Cabelo</h3>
+                                <p class="mb-4">Obtenha um corte de cabelo moderno e personalizado que realça seu estilo. Nossos profissionais são altamente qualificados para atender suas necessidades e oferecer uma experiência única.</p>
+                                <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Corte Personalizado</p>
+                                <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Estilo Moderno</p>
+                                <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Profissionais Qualificados</p>
+                                <a href="" class="btn btn-primary py-3 px-5 mt-3" style="border-radius: 15px">Agende<i class="fa fa-arrow-right ms-3" style="margin-left: 10px"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tab-pane-2">
+                        <div class="row g-4">
+                            <div class="col-md-6" style="min-height: 350px;">
+                                <div class="position-relative h-100">
+                                    <img class="position-absolute img-fluid w-100 h-100" src="../images/barbas/barbaFade.png" style="object-fit: cover;" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h3 class="mb-3">Aparar Barba</h3>
+                                <p class="mb-4">Mantenha sua barba bem cuidada e estilosa com nossos serviços de aparar barba. Utilizamos técnicas precisas para garantir um acabamento perfeito e um visual impecável.</p>
+                                <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Acabamento Perfeito</p>
+                                <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Estilo Impecável</p>
+                                <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Técnicas Precisas</p>
+                                <a href="" class="btn btn-primary py-3 px-5 mt-3" style="border-radius: 15px">Agende<i class="fa fa-arrow-right ms-3" style="margin-left: 10px"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane fade" id="tab-pane-3">
+                        <div class="row g-4">
+                            <div class="col-md-6" style="min-height: 350px;">
+                                <div class="position-relative h-100">
+                                    <img class="position-absolute img-fluid w-100 h-100" src="../images/cuidados/tratamentoDePele.png" style="object-fit: cover;" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h3 class="mb-3">Limpeza de Pele</h3>
+                                <p class="mb-4">Revitalize sua pele com uma limpeza profunda que remove impurezas e células mortas, deixando seu rosto fresco e saudável. Nossa técnica avançada proporciona um tratamento eficaz e relaxante.</p>
+                                <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Tratamento Eficaz</p>
+                                <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Remove Impurezas</p>
+                                <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Pele Saudável</p>
+                                <a href="" class="btn btn-primary py-3 px-5 mt-3" style="border-radius: 15px">Agende<i class="fa fa-arrow-right ms-3"  style="margin-left: 10px"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tab-pane-4">
+                        <div class="row g-4">
+                            <div class="col-md-6" style="min-height: 350px;">
+                                <div class="position-relative h-100">
+                                    <img class="position-absolute img-fluid w-100 h-100" src="../images/tratamentos/relaxamento.png " style="object-fit: cover;" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h3 class="mb-3">Massagem Relaxante</h3>
+                                <p class="mb-4">Relaxe e desestresse com nossas massagens relaxantes. Nossa equipe utiliza técnicas de massagem que aliviam tensões e promovem um profundo estado de relaxamento, ideal para quem busca bem-estar e equilíbrio.</p>
+                                <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Alívio de Tensão</p>
+                                <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Profundo Relaxamento</p>
+                                <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Bem-Estar e Equilíbrio</p>
+                                <a href="" class="btn btn-primary py-3 px-5 mt-3" style="border-radius: 15px">Agende<i class="fa fa-arrow-right ms-3" style="margin-left: 10px"></i></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- END section -->
+    </div>
+</div>
+<!-- Service End -->
 
-    <section class="pt-5 pb-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 video-wrap mb-5">
-                    <img src="../images/tratamentos/tratamentoCabelo.png" alt="Image placeholder" class="img-fluid">
-                </div>
-                <div class="col-md-6 pl-md-5">
-                    <h3>Tratamento de Couro Cabeludo e Cabelo</h3>
-                    <p class="lead">Para um visual moderno e elegante</p>
-                    <p>Este serviço é ideal para homens que desejam uma aparência sofisticada e bem cuidada. A técnica de fade na barba garante uma transição suave de comprimentos, criando um visual elegante e uniforme que é facilmente mantido entre os cortes.</p>
-                  </div>
-            </div>
-        </div>
-    </section>
-    <!-- END section -->
 
-    <section class="pt-5 pb-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 video-wrap mb-5">
-                    <img src="../images/tratamentos/relaxamento.png" alt="Image placeholder" class="img-fluid">
-                </div>
-                <div class="col-md-6 pl-md-5">
-                    <h3>Tratamento de Relaxamento e Bem-Estar</h3>
-                    <p class="lead">Para uma aparência nítida e definida</p>
-                    <p>Um serviço clássico de modelagem e aparagem da barba, realizado com tesoura e navalha para proporcionar um acabamento impecável e personalizado de acordo com as preferências do cliente.</p>
-                  </div>
-            </div>
-        </div>
-    </section>
-    <!-- END section -->
 
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        // Adiciona um evento de clique para os botões das abas
+        $('.nav-link').click(function() {
+            // Remove a classe 'active' de todos os botões
+            $('.nav-link').removeClass('active');
+
+            // Adiciona a classe 'active' apenas ao botão clicado
+            $(this).addClass('active');
+
+            // Obtém o alvo da aba a ser mostrada
+            var target = $(this).attr('data-bs-target');
+
+            // Esconde todas as abas
+            $('.tab-pane').removeClass('show active');
+
+            // Mostra a aba correspondente ao botão clicado
+            $(target).addClass('show active');
+        });
+    });
+    </script>
 
 
 
