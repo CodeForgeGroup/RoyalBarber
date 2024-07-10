@@ -184,7 +184,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Constate-nos</h4>
-                    <p class="mb-2">Avenida Marechal Tito, 1500 - São Paulo, Brasil/p>
+                    <p class="mb-2">Avenida Marechal Tito, 1500 - São Paulo, Brasil</p>
                     <p class="mb-2">(11)95169-04143</p>
                     <p class="mb-2">codeforgegroup@gmail.com</p>
                     <div class="d-flex pt-2">
@@ -207,8 +207,8 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">RoyalBarber</a>, Todos os direitos reservados. 
-                        
+                        &copy; <a class="border-bottom" href="#">RoyalBarber</a>, Todos os direitos reservados.
+
                         <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
                         Desenvolvido por <a class="border-bottom" href="https://htmlcodex.com">CodeForge</a>
                     </div>
