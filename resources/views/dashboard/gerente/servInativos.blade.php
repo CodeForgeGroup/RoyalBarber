@@ -1,7 +1,7 @@
 @extends('dashboard.layout-dash.layout')
 
 
-@section('title', 'Cliente - Agendar')
+@section('title', 'Gerente - Serviços desativados')
 
 @section('conteudo')
 

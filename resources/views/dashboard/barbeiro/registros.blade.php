@@ -1,6 +1,6 @@
 @extends('dashboard.layout-dash.layout')
 
-@section('title', 'Compromissos barbeiro')
+@section('title', 'Barbeiro - Compromissos')
 
 @section('conteudo')
 
@@ -316,7 +316,7 @@
         <div data-aos="fade-left" class="container" style="margin-top: 5%;">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s"
                 style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
-                <h6 class="section-title bg-white text-center text-primary px-3">Veja todos os compromissos que você tem! 
+                <h6 class="section-title bg-white text-center text-primary px-3">Veja todos os compromissos que você tem!
                 </h6>
                 <h1 class="mb-5">Compromissos</h1>
             </div>

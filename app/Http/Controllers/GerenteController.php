@@ -262,14 +262,16 @@ class GerenteController extends Controller
     }
 
     // Remove formatação e converte para inteiro
-    $salarioFuncionario = (int) str_replace(['.', ','], '', $request->salarioFuncionario);
+    // $salarioFuncionario = (int) str_replace(['.', ','], '', $request->salarioFuncionario);
 
     $request->merge([
         'numeroFuncionario' => str_replace('-', '', $request->numeroFuncionario),
-        'salarioFuncionario' => $salarioFuncionario,
+        // 'salarioFuncionario' => $salarioFuncionario,
         'dddFuncionario' => str_replace(['(', ')'], '', $request->dddFuncionario),
     ]);
 
+
+    // dd($request->input('salarioFuncionario'));
 
 
     $request->validate([
@@ -357,7 +359,7 @@ class GerenteController extends Controller
         'fimExpedienteFuncionario' => $request->fimExpedienteFuncionario,
         'cargoFuncionario' => $request->cargoFuncionario,
         'descricaoFuncionario' => $request->descricaoFuncionario,
-        'salarioFuncionario' => $salarioFuncionario,
+        'salarioFuncionario' => $request->salarioFuncionario,
         'statusFuncionario' => $request->statusFuncionario
     ]);
 
@@ -403,8 +405,7 @@ class GerenteController extends Controller
         ]);
 
 
-    $salarioFuncionario = str_replace(['.', ','], [ '', ''], $request->salarioFuncionario);
-
+    // $salarioFuncionario = str_replace(['.', ','], [ '', ''], $request->salarioFuncionario);
 
     // dd($gerente);
 
@@ -502,6 +503,8 @@ class GerenteController extends Controller
 
         $numeroFuncionario = preg_replace('/[^0-9]/', '', $numeroFormatado);
 
+//  dd($request->input('salarioFuncionario'));
+
 
         $gerente->update([
             'fotoFuncionario' => $imagem_url,
@@ -516,7 +519,7 @@ class GerenteController extends Controller
             'fimExpedienteFuncionario' => $request->fimExpedienteFuncionario,
             'cargoFuncionario' => $request->cargoFuncionario,
             'descricaoFuncionario' => $request->descricaoFuncionario,
-            'salarioFuncionario' => $salarioFuncionario,
+            'salarioFuncionario' => $request->salarioFuncionario,
             'statusFuncionario' => $request->statusFuncionario
         ]);
 
@@ -1147,6 +1150,7 @@ class GerenteController extends Controller
 
     public function updateStatusServicoDesativar(Request $request, $id)
     {
+        // dd('to aqui');
 
         $servico = Servico::find($id);
 
@@ -1156,9 +1160,12 @@ class GerenteController extends Controller
 
         // dd($request->statusServico);
 
-        $servico->update([
-            'statusServico' => $request->statusServico
-        ]);
+        // $servico->update([
+        //     'statusServico' => $request->statusServico
+        // ]);
+
+        $servico->statusServico = $request->statusServico;
+        $servico->save();
 
         return redirect()->route('gerente.servicos')->with('success', 'Serviço atualizado com sucesso.');
     }
@@ -1172,9 +1179,12 @@ class GerenteController extends Controller
         // dd($request->statusServico);
 
 
-        $servico->update([
-            'statusServico' => $request->statusServico
-        ]);
+        // $servico->update([
+        //     'statusServico' => $request->statusServico
+        // ]);
+
+        $servico->statusServico = $request->statusServico;
+        $servico->save();
 
         return redirect()->route('gerente.servInativos')->with('success', 'Serviço atualizado com sucesso.');;
     }
@@ -1290,7 +1300,7 @@ class GerenteController extends Controller
             'fimExpedienteFuncionario' => 'required|date_format:H:i|after:inicioExpedienteFuncionario',
             'salarioFuncionario' => 'required|numeric|min:0',
             'emailFuncionario' => 'required|email|max:255|unique:usuarios,email',
-            'senhaFuncionario' => 'required|string|min:6|confirmed',
+            'senhaFuncionario' => 'required|string|min:6',
             'dddFuncionario' => 'required|digits:2',
             'telefoneFuncionario' => 'required|digits:9',
             'dataNascFuncionario' => 'required|date',
@@ -1334,7 +1344,6 @@ class GerenteController extends Controller
             'senhaFuncionario.required' => 'O campo de senha é obrigatório.',
             'senhaFuncionario.string' => 'O campo de senha deve ser uma string.',
             'senhaFuncionario.min' => 'O campo de senha deve ter no mínimo 6 caracteres.',
-            'senhaFuncionario.confirmed' => 'A confirmação da senha não coincide.',
 
             'dddFuncionario.required' => 'O campo de DDD é obrigatório.',
             'dddFuncionario.digits' => 'O campo de DDD deve ter 2 dígitos.',

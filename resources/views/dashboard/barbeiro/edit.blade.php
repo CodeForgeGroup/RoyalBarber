@@ -1,6 +1,6 @@
 @extends('dashboard.layout-dash.layout')
 
-@section('title', 'Funcionários')
+@section('title', 'Barbeiro - Perfil')
 
 @section('conteudo')
 
@@ -878,26 +878,33 @@
                     </div>
                 </div>
 
-                <div class="form-row">
+
+
+
+                <div class="form-row m-b-55">
                     <div class="name">Login</div>
-                    <div class="col-2" style="width: 250px;display: flex;">
-                        <div class="input-group-desc">
-                            <input class="input--style-5" style="width:640px;" type="text"
-                                value="{{ $barbeiro->emailFuncionario }}" @error('emailFuncionario') is-invalid @enderror
-                                id="emailFuncionario" name="emailFuncionario" required maxlength="100">
-                            @error('emailFuncionario')
-                                <span class="invalid-feedback">{{ $message }}</span>
-                            @enderror
-                            <label class="label--desc">Email</label>
-                        </div>
-                        <div class="input-group-desc" style="margin-left: 20%;">
-                            <input class="input--style-5" style="width:500px;" type="password"
-                                value="{{ $senha->senha }}" @error('senhaFuncionario') is-invalid @enderror
-                                id="senhaFuncionario" name="senhaFuncionario" required maxlength="100">
-                            @error('senhaFuncionario')
-                                <span class="invalid-feedback">{{ $message }}</span>
-                            @enderror
-                            <label class="label--desc">Senha</label>
+                    <div class="value">
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group-desc">
+                                    <input class="input--style-5" type="text"
+                                    value="{{ $barbeiro->emailFuncionario }}" id="emailFuncionario" name="emailFuncionario">
+                                    <label class="label--desc">Email</label>
+                                    @error('emailFuncionario')
+                                        <div class="alert alert-danger" style="color:white;">{{ $message }}</div>
+                                    @enderror
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group-desc">
+                                    <input class="input--style-5" type="password"
+                                    value="{{ $senha->senha }}" id="senhaFuncionario" name="senhaFuncionario">
+                                    <label class="label--desc">Senha</label>
+                                    @error('senhaFuncionario')
+                                        <div class="alert alert-danger" style="color:white;">{{ $message }}</div>
+                                    @enderror
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

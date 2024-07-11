@@ -1,6 +1,6 @@
 @extends('dashboard.layout-dash.layout')
 
-@section('title', 'Funcionários')
+@section('title', ' Gerente - Atualização produto')
 
 @section('conteudo')
 

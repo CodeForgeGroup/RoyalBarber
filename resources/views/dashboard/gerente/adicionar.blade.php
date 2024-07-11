@@ -1,6 +1,6 @@
 @extends('dashboard.layout-dash.layout')
 
-@section('title', 'Funcionários')
+@section('title', 'Gerente - Adicionar funcionário')
 
 @section('conteudo')
 
@@ -929,22 +929,29 @@
                     </div>
                 </div>
 
-                <div class="form-row">
+
+                <div class="form-row m-b-55">
                     <div class="name">Login</div>
-                    <div class="col-2" style="width: 250px;display: flex;">
-                        <div class="input-group-desc">
-                            <input class="input--style-5" style="width:640px;" type="text" name="emailFuncionario">
-                            <label class="label--desc">Email</label>
-                            @error('emailFuncionario')
-                                <div class="alert alert-danger" style="color:white;">{{ $message }}</div>
-                            @enderror
-                        </div>
-                        <div class="input-group-desc" style="margin-left: 20%;">
-                            <input class="input--style-5" style="width:500px;" type="password" name="senhaFuncionario">
-                            <label class="label--desc">Senha</label>
-                            @error('senhaFuncionario')
-                                <div class="alert alert-danger" style="color:white;">{{ $message }}</div>
-                            @enderror
+                    <div class="value">
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group-desc">
+                                    <input class="input--style-5" type="text" name="emailFuncionario">
+                                    <label class="label--desc">Email</label>
+                                    @error('emailFuncionario')
+                                        <div class="alert alert-danger" style="color:white;">{{ $message }}</div>
+                                    @enderror
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group-desc">
+                                    <input class="input--style-5" type="password" name="senhaFuncionario">
+                                    <label class="label--desc">Senha</label>
+                                    @error('senhaFuncionario')
+                                        <div class="alert alert-danger" style="color:white;">{{ $message }}</div>
+                                    @enderror
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -952,16 +959,14 @@
                     <div class="name">Telefone</div>
                     <div class="col-2" style="width: 100px;display: flex;">
                         <div class="input-group-desc">
-                            <input class="input--style-5" style="width:100px;" type="text" name="dddFuncionario"
-                                placeholder="(xx)">
+                            <input class="input--style-5" style="width:100px;" type="text" name="dddFuncionario">
                             <label class="label--desc">DDD</label>
                             @error('dddFuncionario')
                                 <div class="alert alert-danger" style="color:white;">{{ $message }}</div>
                             @enderror
                         </div>
                         <div class="input-group-desc" style="margin-left: 10%;">
-                            <input class="input--style-5" style="width:300px;" type="text" name="telefoneFuncionario"
-                                placeholder="xxxxx-xxxx">
+                            <input class="input--style-5" style="width:300px;" type="text" name="telefoneFuncionario">
                             <label class="label--desc">Número Telefone</label>
                             @error('telefoneFuncionario')
                                 <div class="alert alert-danger" style="color:white;">{{ $message }}</div>
@@ -969,17 +974,6 @@
                         </div>
                     </div>
 
-
-                    <div class="col-2" style="width: 300px;display: flex;">
-                        <div class="input-group-desc" style="margin-left: 590px;">
-                            <textarea style="width:500px;height:100px;border:0px;resize:none;" class="input--style-5" name="descricaoFuncionario"
-                                id="descricaoFuncionario" cols="30" rows="10"></textarea>
-                            <label class="label--desc">Descrição</label>
-                            @error('descricaoFuncionario')
-                                <div class="alert alert-danger" style="color:white;">{{ $message }}</div>
-                            @enderror
-                        </div>
-                    </div>
                 </div>
                 <div class="form-row m-b-55">
                     <div class="name">Data</div>
@@ -987,13 +981,28 @@
                         <div class="input-group-desc">
                             <input class="input--style-5" style="width:150px;" type="date"
                                 name="dataNascFuncionario">
-                            <label class="label--desc"></label>
+                            <label class="label--desc">Nascimento</label>
                             @error('dataNascFuncionario')
                                 <div class="alert alert-danger" style="color:white;">{{ $message }}</div>
                             @enderror
                         </div>
                     </div>
                 </div>
+
+                <div class="form-row m-b-55">
+                    <div class="name">Descrição</div>
+                    <div class="col-2" style="width: 100px;display: flex;">
+                        <div class="input-group-desc">
+                            <textarea style="width:500px;height:100px;border:0px;resize:none;" class="input--style-5" name="descricaoFuncionario"
+                            id="descricaoFuncionario" cols="30" rows="10"></textarea>
+                        <label class="label--desc">Descrição</label>
+                        @error('descricaoFuncionario')
+                            <div class="alert alert-danger" style="color:white;">{{ $message }}</div>
+                        @enderror
+                        </div>
+                    </div>
+                </div>
+
                 <div class="form-row">
                     <div class="name">Cargo</div>
                     <div class="value">

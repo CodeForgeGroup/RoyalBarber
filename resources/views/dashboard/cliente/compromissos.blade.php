@@ -1,6 +1,6 @@
 @extends('dashboard.layout-dash.layout')
 
-@section('title', 'Cliente - Agendar')
+@section('title', 'Cliente - Compromisso')
 
 
 @section('conteudo')

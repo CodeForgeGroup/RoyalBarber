@@ -1,6 +1,6 @@
 @extends('dashboard.layout-dash.layout')
 
-@section('title', 'Funcionários')
+@section('title', 'Gerente - Funcionários')
 
 @section('conteudo')
 
@@ -484,7 +484,7 @@ navbar-scroll="true">
                         <th scope="col">Cortes Realizados</th>
                         <th scope="col">Status</th>
                         <th scope="col">Editar</th>
-                        <th scope="col">Cancelar</th>
+                        <th scope="col">Desativar</th>
                     </tr>
                 </thead>
                 <tbody>

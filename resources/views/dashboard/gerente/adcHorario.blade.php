@@ -1,6 +1,6 @@
 @extends('dashboard.layout-dash.layout')
 
-@section('title', 'Funcionários')
+@section('title', 'Gerente - Adicionar horário')
 
 @section('conteudo')
 
@@ -821,7 +821,7 @@
     <div data-aos="fade-left" class="container" style="margin-top: 5%;">
         <div class="text-center wow fadeInUp" data-wow-delay="0.1s"
             style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
-            <a href="/dashboard/gerente/funcionarios">
+            <a href="/dashboard/gerente/agendamento">
                 <ion-icon style="font-size:20pt;margin-left:100%;" name="arrow-back-outline"></ion-icon>
             </a>
             <h6 class="section-title bg-white text-center text-primary px-3">Edite as informações do horário selecionado

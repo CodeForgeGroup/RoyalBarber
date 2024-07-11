@@ -1,6 +1,6 @@
 @extends('dashboard.layout-dash.layout')
 
-@section('title', 'Perfil barbeiro')
+@section('title', 'Barbeiro - Perfil')
 
 @section('conteudo')
     <!-- Navbar -->

@@ -1,6 +1,6 @@
 @extends('dashboard.layout-dash.layout')
 
-@section('title', 'Barbeiro')
+@section('title', 'Gerente')
 
 @section('conteudo')
 

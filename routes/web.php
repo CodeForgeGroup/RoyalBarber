@@ -77,8 +77,8 @@ Route::middleware(['autenticacao:gerente'])->group(function() {
     Route::put('/dashboard/gerente/{id}/gerente/update', [GerenteController::class, 'perfilUpdate'])->name('gerente.update');
     Route::put('/dashboard/gerente/funcionario/{id}', [GerenteController::class, 'updateFuncionario'])->name('update.funcionario');
     Route::put('/dashboard/gerente/servico/{id}', [GerenteController::class, 'updateServico'])->name('update.servico');
-    Route::put('/cliente/desativar/{id}', 'App\Http\Controllers\GerenteController@updateStatusServicoDesativar')->name('gerente.servico.desativar');
-    Route::put('/cliente/ativar/{id}', 'App\Http\Controllers\GerenteController@updateStatusServicoAtivar')->name('gerente.servico.ativar');
+    Route::put('/cliente/servico/desativar/{id}', 'App\Http\Controllers\GerenteController@updateStatusServicoDesativar')->name('gerente.servico.desativar');
+    Route::put('/cliente/servico/ativar/{id}', 'App\Http\Controllers\GerenteController@updateStatusServicoAtivar')->name('gerente.servico.ativar');
     Route::post('/dashboard/gerente/vendas', [GerenteController::class, 'vendasCreate'])->name('gerente.vendas.create');
     Route::get('/dashboard/gerente/servicos', [GerenteController::class, 'servicos'])->name('gerente.servicos');
     Route::get('/dashboard/gerente/servInativos', [GerenteController::class, 'servicosInativos'])->name('gerente.servInativos');

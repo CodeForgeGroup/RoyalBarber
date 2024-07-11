@@ -1,6 +1,6 @@
 @extends('dashboard.layout-dash.layout')
 
-@section('title', 'Funcionários')
+@section('title', 'Cliente - Editar')
 
 @section('conteudo')
 
@@ -881,33 +881,39 @@
                         </div>
                     </div>
                 </div>
-                <div class="form-row">
+
+
+
+                <div class="form-row m-b-55">
                     <div class="name">Login</div>
-                    <div class="col-2" style="width: 250px;display: flex;">
-                        <div class="input-group-desc">
-                            <input class="input--style-5" style="width:640px;" type="text"
-                                value="{{ $cliente->emailCliente }}" id="emailCliente" name="emailCliente">
-                            <label class="label--desc">Email</label>
-
-
-
-                            @error('emailCliente')
-                                <div class="alert alert-danger" style="color:white;">{{ $message }}</div>
-                            @enderror
-                        </div>
-                        <div class="input-group-desc" style="margin-left: 20%;">
-                            <input class="input--style-5" style="width:500px;" type="password" value="{{ $senha->senha }}"
+                    <div class="value">
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group-desc">
+                                    <input class="input--style-5" type="text" value="{{ $cliente->emailCliente }}" id="emailCliente" name="emailCliente">
+                                    <label class="label--desc">Email</label>
+                                    @error('emailCliente')
+                                        <div class="alert alert-danger" style="color:white;">{{ $message }}</div>
+                                    @enderror
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group-desc">
+                                    <input class="input--style-5" type="password" value="{{ $senha->senha }}"
                                 id="senhaCliente" name="senhaCliente">
-                            <label class="label--desc">Senha</label>
-
-
-
-                            @error('senhacliente')
-                                <div class="alert alert-danger" style="color:white;">{{ $message }}</div>
-                            @enderror
+                                <label class="label--desc">Senha</label>
+                                @error('senhacliente')
+                                    <div class="alert alert-danger" style="color:white;">{{ $message }}</div>
+                                @enderror
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+
+
+
                 <div class="form-row m-b-55">
                     <div class="name">Telefone</div>
                     <div class="col-2" style="width: 100px;display: flex;">

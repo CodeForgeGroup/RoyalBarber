@@ -1,6 +1,6 @@
 @extends('dashboard.layout-dash.layout')
 
-@section('title', 'Vendas barbeiro')
+@section('title', 'Gerente - Vendas')
 
 <link rel="stylesheet" href="{{ asset('dashboard/css/style.css') }}">
 
@@ -573,7 +573,7 @@ transition-duration: 1s;
 
 
             <div class="col-lg-4 col-md-6">
-                <div class="card h-100">
+                <div class="card h-100 text-center">
 
                     <div>
                         <div class="card-header pb-0">
@@ -590,7 +590,7 @@ transition-duration: 1s;
                             <div class="formulario">
                                 <div class="input-box nomeProduto">
                                     <select value="{{ old('nomeVenda') }}" placeholder="Nome do produto:" id="nomeVenda" name="nomeVenda">
-                                        <option value="">Selecione um nome</option>
+                                        <option value="">Escolha</option>
                                         @foreach ($produtos as $produto)
                                             <option value="{{ $produto->nomeProduto }}">{{ $produto->nomeProduto }}
                                             </option>
@@ -619,7 +619,7 @@ transition-duration: 1s;
                                 </div>
                                 <div class="input-box">
                                     <input type="text" value="{{ old('descricaoVenda') }}"
-                                        placeholder="Descrição do produto:" id="descricaoVenda"
+                                        placeholder="Descrição da venda:" id="descricaoVenda"
                                         name="descricaoVenda">
 
                                         @error('descricaoVenda')

@@ -1,6 +1,6 @@
 @extends('dashboard.layout-dash.layout')
 
-@section('title', 'Vendas barbeiro')
+@section('title', 'Barbeiro - Vendas')
 
 <link rel="stylesheet" href="{{ asset('dashboard/css/style.css') }}">
 

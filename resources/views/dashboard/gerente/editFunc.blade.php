@@ -1,6 +1,6 @@
 @extends('dashboard.layout-dash.layout')
 
-@section('title', 'Funcionários')
+@section('title', 'Gerente - Editar funcionário')
 
 @section('conteudo')
 
@@ -12,8 +12,8 @@
 
 
         /* ==========================================================================
-               #FONT
-               ========================================================================== */
+                   #FONT
+                   ========================================================================== */
         .font-robo {
             font-family: "Roboto", "Arial", "Helvetica Neue", sans-serif;
         }
@@ -27,8 +27,8 @@
         }
 
         /* ==========================================================================
-               #GRID
-               ========================================================================== */
+                   #GRID
+                   ========================================================================== */
         .row {
             display: -webkit-box;
             display: -webkit-flex;
@@ -168,16 +168,16 @@
         }
 
         /* ==========================================================================
-               #BOX-SIZING
-               ========================================================================== */
+                   #BOX-SIZING
+                   ========================================================================== */
         /**
-             * More sensible default box-sizing:
-             * css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
-             */
+                 * More sensible default box-sizing:
+                 * css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
+                 */
 
         /* ==========================================================================
-               #BACKGROUND
-               ========================================================================== */
+                   #BACKGROUND
+                   ========================================================================== */
         .bg-blue {
             background: #2c6ed5;
         }
@@ -211,8 +211,8 @@
         }
 
         /* ==========================================================================
-               #SPACING
-               ========================================================================== */
+                   #SPACING
+                   ========================================================================== */
         .p-t-100 {
             padding-top: 100px;
         }
@@ -266,8 +266,8 @@
         }
 
         /* ==========================================================================
-               #WRAPPER
-               ========================================================================== */
+                   #WRAPPER
+                   ========================================================================== */
         .wrapper {
             margin: 0 auto;
         }
@@ -289,8 +289,8 @@
         }
 
         /* ==========================================================================
-               #BUTTON
-               ========================================================================== */
+                   #BUTTON
+                   ========================================================================== */
         .btn {
             display: inline-block;
             line-height: 50px;
@@ -350,8 +350,8 @@
         }
 
         /* ==========================================================================
-               #DATE PICKER
-               ========================================================================== */
+                   #DATE PICKER
+                   ========================================================================== */
         td.active {
             background-color: #2c6ed5;
         }
@@ -402,8 +402,8 @@
         }
 
         /* ==========================================================================
-               #FORM
-               ========================================================================== */
+                   #FORM
+                   ========================================================================== */
         input {
             outline: none;
             margin: 0;
@@ -533,8 +533,8 @@
         }
 
         /* ==========================================================================
-               #SELECT2
-               ========================================================================== */
+                   #SELECT2
+                   ========================================================================== */
         .select--no-search .select2-search {
             display: none !important;
         }
@@ -626,8 +626,8 @@
         }
 
         /* ==========================================================================
-               #TITLE
-               ========================================================================== */
+                   #TITLE
+                   ========================================================================== */
         .title {
             font-size: 24px;
             text-transform: uppercase;
@@ -637,8 +637,8 @@
         }
 
         /* ==========================================================================
-               #CARD
-               ========================================================================== */
+                   #CARD
+                   ========================================================================== */
         .card {
             -webkit-border-radius: 3px;
             -moz-border-radius: 3px;
@@ -896,8 +896,8 @@
 
                                 <div class="input-group-desc" style="margin-left: 7%;">
                                     <input class="input--style-5" style="width:300px;" type="text"
-                                        value="{{ $funcionario->salarioFuncionario }}"
-                                        id="salarioFuncionario" name="salarioFuncionario" maxlength="100">
+                                        value="{{ $funcionario->salarioFuncionario }}" id="salarioFuncionario"
+                                        name="salarioFuncionario" maxlength="100">
                                     <label class="label--desc">Salario</label>
 
                                     @error('salarioFuncionario')
@@ -929,8 +929,8 @@
 
                                 <div class="input-group-desc" style="margin-left: 7%;">
                                     <input class="input--style-5" style="width:300px;" type="text"
-                                        value="{{ $funcionario->fimExpedienteFuncionario }}" id="fimExpedienteFuncionario"
-                                        name="fimExpedienteFuncionario" maxlength="100">
+                                        value="{{ $funcionario->fimExpedienteFuncionario }}"
+                                        id="fimExpedienteFuncionario" name="fimExpedienteFuncionario" maxlength="100">
                                     <label class="label--desc">Fim Expediente</label>
 
                                     @error('fimExpedienteFuncionario')
@@ -943,31 +943,37 @@
                 </div>
 
 
-                <div class="form-row">
+
+
+                <div class="form-row m-b-55">
                     <div class="name">Login</div>
-                    <div class="col-2" style="width: 250px;display: flex;">
-                        <div class="input-group-desc">
-                            <input class="input--style-5" style="width:640px;" type="text"
-                                value="{{ $funcionario->emailFuncionario }}" id="emailFuncionario"
-                                name="emailFuncionario" maxlength="100">
-                            <label class="label--desc">Email</label>
-
-                            @error('emailFuncionario')
-                            <div class="alert alert-danger" style="color:white;">{{ $message }}</div>
-                        @enderror
-                        </div>
-                        <div class="input-group-desc" style="margin-left: 20%;">
-                            <input class="input--style-5" style="width:500px;" type="password"
-                                value="{{ $senha->senha }}" id="senhaFuncionario" name="senhaFuncionario"
-                                maxlength="100">
-                            <label class="label--desc">Senha</label>
-
-                            @error('senhaFuncionario')
-                            <div class="alert alert-danger" style="color:white;">{{ $message }}</div>
-                        @enderror
+                    <div class="value">
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group-desc">
+                                    <input class="input--style-5" type="text"
+                                    value="{{ $funcionario->emailFuncionario }}" id="emailFuncionario" name="emailFuncionario">
+                                    <label class="label--desc">Email</label>
+                                    @error('emailFuncionario')
+                                        <div class="alert alert-danger" style="color:white;">{{ $message }}</div>
+                                    @enderror
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group-desc">
+                                    <input class="input--style-5" type="password"
+                                    value="{{ $senha->senha }}" id="senhaFuncionario" name="senhaFuncionario">
+                                    <label class="label--desc">Senha</label>
+                                    @error('senhaFuncionario')
+                                        <div class="alert alert-danger" style="color:white;">{{ $message }}</div>
+                                    @enderror
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+
                 <div class="form-row m-b-55">
                     <div class="name">Telefone</div>
                     <div class="col-2" style="width: 100px;display: flex;">
@@ -979,8 +985,8 @@ $testeDD = '(' . substr($funcionario->numeroFuncionario, 0, 2) . ')' @endphp
                             <label class="label--desc">DDD</label>
 
                             @error('dddFuncionario')
-                            <div class="alert alert-danger" style="color:white;">{{ $message }}</div>
-                        @enderror
+                                <div class="alert alert-danger" style="color:white;">{{ $message }}</div>
+                            @enderror
                         </div>
                         <div class="input-group-desc" style="margin-left: 10%;">
                             <input class="input--style-5" style="width:300px;" type="text"
@@ -989,17 +995,6 @@ $testeDD = '(' . substr($funcionario->numeroFuncionario, 0, 2) . ')' @endphp
                             <label class="label--desc">Número Telefone</label>
 
                             @error('telefoneFuncionario')
-                            <div class="alert alert-danger" style="color:white;">{{ $message }}</div>
-                        @enderror
-                        </div>
-                    </div>
-
-                    <div class="col-2" style="width: 300px;display: flex;">
-                        <div class="input-group-desc" style="margin-left: 590px;">
-                            <textarea style="width:500px;height:100px;border:0px;resize:none;" class="input--style-5" name="descricaoFuncionario"
-                                id="descricaoFuncionario" cols="30" rows="10">{{ $funcionario->descricaoFuncionario }}</textarea>
-                            <label class="label--desc">Descrição</label>
-                            @error('descricaoFuncionario')
                                 <div class="alert alert-danger" style="color:white;">{{ $message }}</div>
                             @enderror
                         </div>
@@ -1011,14 +1006,30 @@ $testeDD = '(' . substr($funcionario->numeroFuncionario, 0, 2) . ')' @endphp
                         <div class="input-group-desc">
                             <input class="input--style-5" style="width:150px;" type="date" name="dataNascFuncionario"
                                 value='{{ $funcionario->dataNascFuncionario }}'>
-                            <label class="label--desc"></label>
+                            <label class="label--desc">Nascimento</label>
 
                             @error('dataNascFuncionario')
-                            <div class="alert alert-danger" style="color:white;">{{ $message }}</div>
-                        @enderror
+                                <div class="alert alert-danger" style="color:white;">{{ $message }}</div>
+                            @enderror
                         </div>
                     </div>
                 </div>
+
+
+                <div class="form-row m-b-55">
+                    <div class="name">Descrição</div>
+                    <div class="col-2" style="width: 100px;display: flex;">
+                        <div class="input-group-desc">
+                            <textarea style="width:500px;height:100px;border:0px;resize:none;" class="input--style-5" name="descricaoFuncionario"
+                                id="descricaoFuncionario" cols="30" rows="10">{{ $funcionario->descricaoFuncionario }}</textarea>
+                            <label class="label--desc">Descrição</label>
+                            @error('descricaoFuncionario')
+                                <div class="alert alert-danger" style="color:white;">{{ $message }}</div>
+                            @enderror
+                        </div>
+                    </div>
+                </div>
+
 
                 <div class="form-row">
                     <div class="name">Cargo</div>
@@ -1036,8 +1047,6 @@ $testeDD = '(' . substr($funcionario->numeroFuncionario, 0, 2) . ')' @endphp
                                             <input type="radio" name="cargoFuncionario" value="barbeiro">
                                             <span class="name">Barbeiro</span>
                                         </label>
-
-
                                     @else
                                         <label class="radio">
                                             <input type="radio" name="cargoFuncionario" checked=""
@@ -1048,7 +1057,6 @@ $testeDD = '(' . substr($funcionario->numeroFuncionario, 0, 2) . ')' @endphp
                                             <input type="radio" name="cargoFuncionario" value="gerente">
                                             <span class="name">Gerente</span>
                                         </label>
-
                                     @endif
 
                                 </div><span style="display: none"
