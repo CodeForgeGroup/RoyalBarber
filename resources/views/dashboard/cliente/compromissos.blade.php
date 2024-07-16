@@ -295,9 +295,19 @@ perspective: 2700px;
                         @foreach ($dados as $dado)
                         @php
                           $dataFormataad = date('d/m/Y', strtotime($dado->dataAgendamento));
+
+                          $fotoServicoAtual = $dado->servico->fotoServico;
+                                    if($fotoServicoAtual === 'SEM IMAGEM'){
+                                        $fotoServicoAtual = asset('images/royalBarberFunc.png');
+                                        // dd($fotoServicoAtual);
+                                    }else{
+                                        $fotoServicoAtual = asset('storage/'.$dado->servico->fotoServico);
+                                    }
                         @endphp
                             <tr scope="row">
-                                <td style="padding: 0;"><img style="width:100px; border-radius:60px; margin-top:5%;" src="{{ asset('storage/' . $dado->servico->fotoServico) }}" alt="{{ $dado->servico->nomeServico }}"></td>
+
+                                <td style="padding: 0;"><img style="width:100px; height:70px; border-radius:60px; margin-top:5%;" src="{{ $fotoServicoAtual }}" alt="{{ $dado->servico->nomeServico }}"></td>
+
                                 <td style="text-align:center;">{{ $dado->funcionario->nomeFuncionario }} {{ $dado->funcionario->sobrenomeFuncionario }}</td>
                                 <td style="text-align: center;">{{ $dado->servico->nomeServico }}</td>
                                 <td style="text-align: center;">R${{ $dado->servico->valorServico }}</td>

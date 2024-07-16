@@ -496,6 +496,7 @@
             background-color: #ff6d26;
             padding: 10px 20px;
             color: white;
+            border-radius:20px 0px 0px 20px;
         }
 
         .about-g img {

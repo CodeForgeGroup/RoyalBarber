@@ -14,9 +14,11 @@ return new class extends Migration
         Schema::create('contatos', function (Blueprint $table) {
             $table->id();
             $table->string('nomeContato', 100);
-            $table->string('foneContato', 15);
+            // $table->string('foneContato', 15);
+
             $table->string('emailContato', 100);
             $table->text('mensContato');
+            $table->string('assuntoContato',100);
             $table->timestamps();
         });
     }

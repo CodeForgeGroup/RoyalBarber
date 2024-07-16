@@ -4,6 +4,8 @@
     <title>Royal Barber</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
 
@@ -214,9 +216,9 @@
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <div class="footer-menu">
-                            <a href="">Cadastre-se</a>
+                            <a href="{{route('login')}}">Cadastre-se</a>
                             <a href="">App</a>
-                            <a href="">Contato</a>
+                            <a href="{{route('contato')}}">Contato</a>
                         </div>
                     </div>
                 </div>

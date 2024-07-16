@@ -181,8 +181,18 @@
                             <div class="position-relative overflow-hidden">
                                 <!-- Exibir a imagem do serviço -->
 
-                                <img class="img-fluid" src="{{ asset('storage/' . $item->fotoServico) }}"
-                                    alt="{{ $item->nomeServico }}">
+
+                                @php
+                                $fotoServicoAtual = $item->fotoServico;
+                                    if($fotoServicoAtual === 'SEM IMAGEM'){
+                                        $fotoServicoAtual = asset('images/royalBarberFunc.png');
+                                        // dd($fotoServicoAtual);
+                                    }else{
+                                        $fotoServicoAtual = asset('storage/'.$item->fotoServico);
+                                    }
+                                @endphp
+
+                                <img class="img-fluid" src="{{ $fotoServicoAtual }}"alt="{{ $item->nomeServico }}" style="height:260px; width:100%;">
                                     <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4 align-items-center">
                                         @if ($item->statusServico === 'ativo')
                                         <form action="{{ route('gerente.servico.desativar', ['id' => $item->id, 'statusServico' => 'inativo']) }}" method="POST" style="display: inline;">

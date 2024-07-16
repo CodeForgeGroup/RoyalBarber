@@ -16,12 +16,15 @@ class ContatoController extends Controller
 
     public function salvarNoBanco(Request $request)
     {
+        // dd('teste');
+
         $dados = $request->all();
 
         $validarDados = Validator::make($dados, [
             'nomeContato'    => 'required|max:100',
-            'foneContato'    => 'required|max:15',
+            // 'foneContato'    => 'required|max:15',
             'emailContato'   => 'required|email|max:100',
+            'assuntoContato' => 'required',
             'mensContato'    => 'required',
         ]);
 
@@ -29,11 +32,10 @@ class ContatoController extends Controller
             return response()->json(['errors' => $validarDados->errors()], 422);
         }
         else {
-
             $contato = Contato::create($validarDados->validated());
 
             // Por email
-            Mail::to('codeforge@smpsistema.com.br')->send(new ContatoEmail($contato));
+            Mail::to('codeforgegroup@gmail.com')->send(new ContatoEmail($contato));
 
             return response()->json(['success' => 'Email registrado com sucesso']);
         }

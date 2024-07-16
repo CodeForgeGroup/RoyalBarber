@@ -43,7 +43,21 @@ perspective: 2700px;
                 <div style="border-radius: 20px;" class="course-item bg-light">
                     <div class="position-relative overflow-hidden">
                         <!-- Exibir a imagem do serviço -->
-                        <img class="img-fluid" src="{{ asset('storage/' . $item->fotoServico) }}" alt="{{ $item->nomeServico }}">
+
+
+                        @php
+                                $fotoServicoAtual = $item->fotoServico;
+                                    if($fotoServicoAtual === 'SEM IMAGEM'){
+                                        $fotoServicoAtual = asset('images/royalBarberFunc.png');
+                                        // dd($fotoServicoAtual);
+                                    }else{
+                                        $fotoServicoAtual = asset('storage/'.$item->fotoServico);
+                                    }
+                        @endphp
+
+                        <img class="img-fluid" src="{{ $fotoServicoAtual }}" alt="{{ $item->nomeServico }}" style="height: 260px; width:100%;">
+
+
                         <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
                             <a href="{{ route('pagina.calendario', ['id_servico' => $item->id, 'nome_servico' => $item->nomeServico, 'valor_servico' => $item->valorServico, 'duracao_servico' => $item->duracaoServico]) }}" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 30px 30px 30px 30px;">Agendar</a>
                         </div>

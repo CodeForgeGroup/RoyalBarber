@@ -125,7 +125,7 @@
                                 <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Corte Personalizado</p>
                                 <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Estilo Moderno</p>
                                 <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Profissionais Qualificados</p>
-                                <a href="" class="btn btn-primary py-3 px-5 mt-3" style="border-radius: 15px">Agende<i class="fa fa-arrow-right ms-3" style="margin-left: 10px"></i></a>
+                                <a href="{{route('login')}}" class="btn btn-primary py-3 px-5 mt-3" style="border-radius: 15px">Agende<i class="fa fa-arrow-right ms-3" style="margin-left: 10px"></i></a>
                             </div>
                         </div>
                     </div>
@@ -142,11 +142,11 @@
                                 <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Acabamento Perfeito</p>
                                 <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Estilo Impecável</p>
                                 <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Técnicas Precisas</p>
-                                <a href="" class="btn btn-primary py-3 px-5 mt-3" style="border-radius: 15px">Agende<i class="fa fa-arrow-right ms-3" style="margin-left: 10px"></i></a>
+                                <a href="{{route('login')}}" class="btn btn-primary py-3 px-5 mt-3" style="border-radius: 15px">Agende<i class="fa fa-arrow-right ms-3" style="margin-left: 10px"></i></a>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="tab-pane fade" id="tab-pane-3">
                         <div class="row g-4">
                             <div class="col-md-6" style="min-height: 350px;">
@@ -160,7 +160,7 @@
                                 <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Tratamento Eficaz</p>
                                 <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Remove Impurezas</p>
                                 <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Pele Saudável</p>
-                                <a href="" class="btn btn-primary py-3 px-5 mt-3" style="border-radius: 15px">Agende<i class="fa fa-arrow-right ms-3"  style="margin-left: 10px"></i></a>
+                                <a href="{{route('login')}}" class="btn btn-primary py-3 px-5 mt-3" style="border-radius: 15px">Agende<i class="fa fa-arrow-right ms-3"  style="margin-left: 10px"></i></a>
                             </div>
                         </div>
                     </div>
@@ -177,7 +177,7 @@
                                 <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Alívio de Tensão</p>
                                 <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Profundo Relaxamento</p>
                                 <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Bem-Estar e Equilíbrio</p>
-                                <a href="" class="btn btn-primary py-3 px-5 mt-3" style="border-radius: 15px">Agende<i class="fa fa-arrow-right ms-3" style="margin-left: 10px"></i></a>
+                                <a href="{{route('login')}}" class="btn btn-primary py-3 px-5 mt-3" style="border-radius: 15px">Agende<i class="fa fa-arrow-right ms-3" style="margin-left: 10px"></i></a>
                             </div>
                         </div>
                     </div>

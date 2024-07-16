@@ -86,7 +86,7 @@
       </div>
     </section>
     <!-- END section -->
-    
+
 
 
     <!-- Service Start -->
@@ -128,7 +128,7 @@
                                 <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Tratamento Eficaz</p>
                                 <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Remove Impurezas</p>
                                 <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Pele Saudável</p>
-                                <a href="" class="btn btn-primary py-3 px-5 mt-3" style="border-radius: 15px">Agende<i class="fa fa-arrow-right ms-3"  style="margin-left: 10px"></i></a>
+                                <a href="{{route('login')}}" class="btn btn-primary py-3 px-5 mt-3" style="border-radius: 15px">Agende<i class="fa fa-arrow-right ms-3"  style="margin-left: 10px"></i></a>
                             </div>
                         </div>
                     </div>
@@ -145,7 +145,7 @@
                                 <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Pele Macia</p>
                                 <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Nutrição Intensa</p>
                                 <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Revitalização</p>
-                                <a href="" class="btn btn-primary py-3 px-5 mt-3" style="border-radius: 15px">Agende<i class="fa fa-arrow-right ms-3" style="margin-left: 10px"></i></a>
+                                <a href="{{route('login')}}" class="btn btn-primary py-3 px-5 mt-3" style="border-radius: 15px">Agende<i class="fa fa-arrow-right ms-3" style="margin-left: 10px"></i></a>
                             </div>
                         </div>
                     </div>
@@ -162,7 +162,7 @@
                                 <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Óleos Essenciais</p>
                                 <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Hidratação Profunda</p>
                                 <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Toque Macio</p>
-                                <a href="" class="btn btn-primary py-3 px-5 mt-3" style="border-radius: 15px">Agende<i class="fa fa-arrow-right ms-3" style="margin-left: 10px"></i></a>
+                                <a href="{{route('login')}}" class="btn btn-primary py-3 px-5 mt-3" style="border-radius: 15px">Agende<i class="fa fa-arrow-right ms-3" style="margin-left: 10px"></i></a>
                             </div>
                         </div>
                     </div>
@@ -179,7 +179,7 @@
                                 <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Alívio de Tensão</p>
                                 <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Profundo Relaxamento</p>
                                 <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Bem-Estar e Equilíbrio</p>
-                                <a href="" class="btn btn-primary py-3 px-5 mt-3" style="border-radius: 15px">Agende<i class="fa fa-arrow-right ms-3" style="margin-left: 10px"></i></a>
+                                <a href="{{route('login')}}" class="btn btn-primary py-3 px-5 mt-3" style="border-radius: 15px">Agende<i class="fa fa-arrow-right ms-3" style="margin-left: 10px"></i></a>
                             </div>
                         </div>
                     </div>

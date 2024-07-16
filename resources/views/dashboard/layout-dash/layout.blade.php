@@ -5,20 +5,20 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" href="{{ asset('images/logo-royalbarberBRANCO-borda.png') }}" type="image/x-icon">
-    <link href="{{ asset('../dashboard/img/favicon.icon') }}" rel="icon">
+    <link href="{{ asset('dashboard/img/favicon.icon') }}" rel="icon">
 
     <title>Dashboard - @yield('title')</title>
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
     <!-- Nucleo Icons -->
-    <link href="{{ asset('../dashboard/css/nucleo-icons.css') }}" rel="stylesheet" />
-    <link href="{{ asset('../dashboard/css/nucleo-svg.css') }}" rel="stylesheet" />
+    <link href="{{ asset('dashboard/css/nucleo-icons.css') }}" rel="stylesheet" />
+    <link href="{{ asset('dashboard/css/nucleo-svg.css') }}" rel="stylesheet" />
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="{{ asset('fonts/fontawesome/css/font-awesome.min.css') }}">
     <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
     <link href="{{ asset('../dashboard/css/nucleo-svg.css') }}" rel="stylesheet" />
     <!-- CSS Files -->
-    <link id="pagestyle" href="{{ asset('../dashboard/css/soft-ui-dashboard.css?v=1.0.3') }}" rel="stylesheet" />
+    <link id="pagestyle" href="{{ asset('dashboard/css/soft-ui-dashboard.css?v=1.0.3') }}" rel="stylesheet" />
     <link href="{{ asset('https://unpkg.com/aos@2.3.1/dist/aos.css') }}" rel="stylesheet">
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -924,7 +924,7 @@
     <!-- Github buttons -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
-    <script src="{{ asset('../dashboard/js/soft-ui-dashboard.min.js?v=1.0.3') }}"></script>
+    <script src="{{ asset('dashboard/js/soft-ui-dashboard.min.js?v=1.0.3') }}"></script>
 
     <script>
         // Função para adicionar a classe "active" ao clicar em um link de navegação

@@ -13,8 +13,9 @@ class Contato extends Model
 
     protected $fillable = [
         'nomeContato',
-        'foneContato',
+        // 'foneContato',
         'emailContato',
-        'mensContato'
+        'mensContato',
+        'assuntoContato'
     ];
 }

@@ -153,3 +153,5 @@ Route::get('/funcionarios/showBarbeiros', [FuncionarioController::class, 'showBa
 Route::get('/horarios/disponiveis', [FuncionarioController::class, 'showHorarios'])->name('horarios.disponiveis');
 
 Route::post('/agendamentos/mobile', [AgendamentoController::class, 'storeMobile']);
+
+Route::post('envio/email', [ContatoController::class, 'salvarNoBanco'])->name('envio.email');

@@ -124,7 +124,7 @@
                                     <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Ampla Gama de Cores</p>
                                     <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Produtos de Alta Qualidade</p>
                                     <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Resultados Duradouros</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 mt-3" style="border-radius: 15px">Agende<i class="fa fa-arrow-right ms-3" style="margin-left: 10px"></i></a>
+                                    <a href="{{route('login')}}" class="btn btn-primary py-3 px-5 mt-3" style="border-radius: 15px">Agende<i class="fa fa-arrow-right ms-3" style="margin-left: 10px"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -141,7 +141,7 @@
                                     <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Resultado Natural</p>
                                     <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Cobertura de Fios Brancos</p>
                                     <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Especialistas em Coloração</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 mt-3" style="border-radius: 15px">Agende<i class="fa fa-arrow-right ms-3" style="margin-left: 10px"></i></a>
+                                    <a href="{{route('login')}}" class="btn btn-primary py-3 px-5 mt-3" style="border-radius: 15px">Agende<i class="fa fa-arrow-right ms-3" style="margin-left: 10px"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -158,7 +158,7 @@
                                     <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Efeito Natural</p>
                                     <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Técnicas Modernas</p>
                                     <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Realce da Beleza dos Fios</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 mt-3" style="border-radius: 15px">Agende<i class="fa fa-arrow-right ms-3" style="margin-left: 10px"></i></a>
+                                    <a href="{{route('login')}}" class="btn btn-primary py-3 px-5 mt-3" style="border-radius: 15px">Agende<i class="fa fa-arrow-right ms-3" style="margin-left: 10px"></i></a>
 
                                 </div>
                             </div>
@@ -176,7 +176,7 @@
                                     <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Correção de Imperfeições</p>
                                     <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Técnicas Avançadas</p>
                                     <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Resultado Impecável</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 mt-3" style="border-radius: 15px">Agende<i class="fa fa-arrow-right ms-3" style="margin-left: 10px"></i></a>
+                                    <a href="{{route('login')}}" class="btn btn-primary py-3 px-5 mt-3" style="border-radius: 15px">Agende<i class="fa fa-arrow-right ms-3" style="margin-left: 10px"></i></a>
 
                                 </div>
                             </div>

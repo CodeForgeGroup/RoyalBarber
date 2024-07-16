@@ -127,7 +127,7 @@
                                     <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Serviço de Alta Qualidade</p>
                                     <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Profissionais Experientes</p>
                                     <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Equipamentos Modernos</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 mt-3" style="border-radius: 15px">Agende<i class="fa fa-arrow-right ms-3"  style="margin-left: 10px"></i></a>
+                                    <a href="{{route('login')}}" class="btn btn-primary py-3 px-5 mt-3" style="border-radius: 15px">Agende<i class="fa fa-arrow-right ms-3"  style="margin-left: 10px"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -144,7 +144,7 @@
                                     <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Serviço Personalizado</p>
                                     <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Barbeiros Especializados</p>
                                     <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Ambiente Confortável</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 mt-3" style="border-radius: 15px">Agende<i class="fa fa-arrow-right ms-3" style="margin-left: 10px"></i></a>
+                                    <a href="{{route('login')}}" class="btn btn-primary py-3 px-5 mt-3" style="border-radius: 15px">Agende<i class="fa fa-arrow-right ms-3" style="margin-left: 10px"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -161,7 +161,7 @@
                                     <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Tratamento Completo</p>
                                     <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Produtos de Alta Qualidade</p>
                                     <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Ambiente Relaxante</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 mt-3" style="border-radius: 15px">Agende<i class="fa fa-arrow-right ms-3" style="margin-left: 10px"></i></a>
+                                    <a href="{{route('login')}}" class="btn btn-primary py-3 px-5 mt-3" style="border-radius: 15px">Agende<i class="fa fa-arrow-right ms-3" style="margin-left: 10px"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -178,7 +178,7 @@
                                     <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Planos Personalizados</p>
                                     <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Agendamentos Flexíveis</p>
                                     <p><i class="fa fa-check text-success me-3" style="margin-right: 10px"></i>Cuidado Contínuo</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 mt-3" style="border-radius: 15px">Agende<i class="fa fa-arrow-right ms-3" style="margin-left: 10px"></i></a>
+                                    <a href="{{route('login')}}" class="btn btn-primary py-3 px-5 mt-3" style="border-radius: 15px">Agende<i class="fa fa-arrow-right ms-3" style="margin-left: 10px"></i></a>
                                 </div>
                             </div>
                         </div>

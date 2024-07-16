@@ -589,8 +589,8 @@ padding-top: 26%;
           <div class="mu-contact-area">
 
             <div class="mu-title">
-              <span class="mu-subtitle">Entre em</span>
-              <h1>Contato</h1>
+              <span class="mu-subtitle" style="color: gainsboro">Entre em</span>
+              <h1 style="color: white">Contato</h1>
             </div>
 
             <div class="mu-contact-content">
@@ -601,22 +601,23 @@ padding-top: 26%;
                     <!-- Email message div -->
                     <div id="form-messages"></div>
                     <!-- Start contact form -->
-                    <form id="ajax-contact" method="post" action="mailer.php" class="mu-contact-form">
+                    <form id="ajax-contact" method="post" action="{{route('envio.email')}}" class="mu-contact-form">
+                        @csrf
                       <div class="form-group">
                         <label for="name">Seu nome</label>
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Nome" required>
+                        <input type="text" class="form-control" id="name" name="nomeContato" placeholder="Nome" style="color: gainsboro" required>
                       </div>
                       <div class="form-group">
                         <label for="email">Seu email</label>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                        <input type="email" class="form-control" id="email" name="emailContato" placeholder="Email" style="color: gainsboro" required>
                       </div>
                       <div class="form-group">
                         <label for="subject">Assunto</label>
-                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Assunto" required>
+                        <input type="text" class="form-control" id="subject" name="assuntoContato" placeholder="Assunto" style="color: gainsboro" required>
                       </div>
                       <div class="form-group">
                         <label for="message">Mensagem</label>
-                        <textarea class="form-control" id="message" name="message"  cols="30" rows="10" placeholder="Escreva sua mensagem" required></textarea>
+                        <textarea class="form-control" id="message" name="mensContato"  cols="30" rows="10" placeholder="Escreva sua mensagem" style="color: gainsboro" required></textarea>
                       </div>
                       <button type="submit" class="mu-send-btn">Envie a mensagem</button>
                     </form>
@@ -626,20 +627,20 @@ padding-top: 26%;
                 <div class="col-md-6">
                   <div class="mu-contact-right">
                     <div class="mu-contact-widget">
-                      <h3>Nossas informações</h3>
-                      <p>Entre em contato conosco, tire duvidas, converse e venha conhecer a melhor barbearia da região. Realize seu sonho aumente sua autoestima!</p>
+                      <h3 style="color:white;">Nossas informações</h3>
+                      <p style="color: gainsboro">Entre em contato conosco, tire duvidas, converse e venha conhecer a melhor barbearia da região. Realize seu sonho aumente sua autoestima!</p>
                       <address>
-                        <p><i class="fa fa-phone"></i> (11) 99999 9999</p>
-                        <p><i class="fa fa-envelope-o"></i>royalbarber@markups.io</p>
-                        <p><i class="fa fa-map-marker"></i>Avenida Marechal Tito, 1500</p>
+                        <p style="color:white;"><i class="fa fa-phone"></i> (11) 99999 9999</p>
+                        <p style="color:white;"><i class="fa fa-envelope-o"></i>royalbarber@markups.io</p>
+                        <p style="color:white;"><i class="fa fa-map-marker"></i>Avenida Marechal Tito, 1500</p>
                       </address>
                     </div>
                     <div class="mu-contact-widget">
-                      <h3>Horário de funcionamento</h3>
+                      <h3 style="color:white;">Horário de funcionamento</h3>
                       <address>
-                        <p><span>Segunda - Sexta</span> 10:00 até as 20:00</p>
-                        <p><span>Sábado</span> 11:00 até as 21:00</p>
-                        <p><span>Domingo</span> 12:00 até as 19:00</p>
+                        <p style="color: gainsboro"><span>Segunda - Sexta</span> 10:00 até as 20:00</p>
+                        <p style="color: gainsboro"><span>Sábado</span> 11:00 até as 21:00</p>
+                        <p style="color: gainsboro"><span>Domingo</span> 12:00 até as 19:00</p>
                       </address>
                     </div>
                   </div>
