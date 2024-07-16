@@ -145,8 +145,8 @@ class GerenteController extends Controller
         if ($funcionarioDoMes == null) {
 
             $totalFuncionario = '0';
-        } else {;
-            $totalfuncionario = $funcionarioDoMes->total;
+        } else {
+            $totalFuncionario = $funcionarioDoMes->total;
         }
 
 
@@ -156,6 +156,7 @@ class GerenteController extends Controller
         } else {
             $funcionarioDoMes == null;
         }
+
 
 
         $total = $totalFuncionario;

@@ -149,4 +149,7 @@ Route::get('/emailCliente', [AgendamentoController::class, 'getEmailCli'])->name
 Route::post('/loginApi', [LoginController::class, 'login'])->name('login.api');
 Route::get('/agendamento/show/{id}', [AgendamentoController::class, 'show'])->name('show.agendamento');
 
-Route::get('/funcionarios/show', [FuncionarioController::class, 'show'])->name('funcionarios.show');
+Route::get('/funcionarios/showBarbeiros', [FuncionarioController::class, 'showBarbeiros'])->name('funcionarios.show');
+Route::get('/horarios/disponiveis', [FuncionarioController::class, 'showHorarios'])->name('horarios.disponiveis');
+
+Route::post('/agendamentos/mobile', [AgendamentoController::class, 'storeMobile']);

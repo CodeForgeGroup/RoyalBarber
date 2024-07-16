@@ -78,10 +78,7 @@ class ServicoController extends Controller
      */
     public function show(Servico $servico)
     {
-        $servicos = Servico::all()->map(function($servico) {
-            $servico->fotoServico = url('storage/imagem/' . $servico->fotoServico);  // Ajustar caminho da imagem
-            return $servico;
-        });
+        $servicos = Servico::all();
         return response()->json($servicos);
     }
 
